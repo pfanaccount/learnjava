@@ -1,21 +1,21 @@
+import java.util.Scanner;
+
 public class Main {
    
     public static void main(String[] args) {
 
-        int age = 21;
-        double average = 57.91;
-        char grade = 'C';
-        boolean isPassing = true;
-        String studentName = "Big Badinky Bones";
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Student Name: " + studentName);
-        System.out.println("Student Age: " + age);
-        System.out.println("Student Average: " + average);
-        System.out.println("Student Grade: " + grade);
-        
-        if (isPassing) { 
-            System.out.println("The student is passing.");
-        }
-        
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine();
+
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();
+
+
+        System.out.println("Hello " + name);
+        System.out.println("You are " + age + " years old.");
+
+        scanner.close();
     }
 }
