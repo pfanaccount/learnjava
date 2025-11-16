@@ -6,23 +6,16 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter your name: ");
-        String name = scanner.nextLine();
+        double width = 0;
+        double height = 0;
 
-        System.out.print("Enter your age: ");
-        int age = scanner.nextInt();
+        System.out.print("Enter width (cm): ");
+        width = scanner.nextDouble();
+        System.out.print("Enter height (cm): ");
+        height = scanner.nextDouble();
 
-        System.out.print("Did you shank someone in the leg at Panera bread? (true/false)");
-        boolean didShank = scanner.nextBoolean();
+        System.out.println("The rectangles area is " + (width * height) + " cm squared.");
 
-        System.out.println("Hello " + name);
-        System.out.println("You are " + age + " years old.");
-        if (didShank) {
-            System.out.println("You are a wanted felon.");
-        }
-        else {
-            System.out.println("You are not a wanted felon.");
-        }
 
         scanner.close();
     }
