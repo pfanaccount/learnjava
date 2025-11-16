@@ -1,2 +1,2 @@
 # learnjava
-Current progress: Video 5/71
+Current progress: Video 6/71

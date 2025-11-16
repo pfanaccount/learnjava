@@ -6,15 +6,20 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("What will you buy? ");
-        String product = scanner.nextLine();
-        System.out.print("What is the price per item? $");
-        double price = scanner.nextDouble();
-        System.out.print("How many will you buy? ");
-        int quantity = scanner.nextInt();
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();
 
-        double totalPrice = price * quantity;
-        System.out.println("Your purchase of " + quantity + " " + product + "s will cost $" + totalPrice + ".");
+        if (age >= 18 && age <= 56) {
+            System.out.println("Drink as much alcohol as you can. Seriously, it's good for you.");
+        }
+        else if (age > 56 ) {
+            System.out.println("lmao unc");
+        }
+        else {
+            System.out.println("ALCOHOL IS THE SERPENT'S BLOOD. AVOID AVOID AVOID.");
 
+        }
+
+        scanner.close();
     }
 }
