@@ -6,15 +6,15 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter a whole number: ");
-        int number = scanner.nextInt();
-        if (number % 2 == 0) {
-            System.out.println(number + " is even.");
-        }
-        else {
-            System.out.println(number + " is odd.");
-        }
+        System.out.print("What will you buy? ");
+        String product = scanner.nextLine();
+        System.out.print("What is the price per item? $");
+        double price = scanner.nextDouble();
+        System.out.print("How many will you buy? ");
+        int quantity = scanner.nextInt();
 
-        scanner.close();
+        double totalPrice = price * quantity;
+        System.out.println("Your purchase of " + quantity + " " + product + "s will cost $" + totalPrice + ".");
+
     }
 }
