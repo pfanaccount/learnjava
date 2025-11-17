@@ -1,35 +1,24 @@
-import java.util.Scanner;
+import java.util.Random;
 
 public class Main {
    
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
 
-        System.out.print("Enter your name: ");
-        String name = scanner.nextLine();
+        boolean isHeads;
 
-        System.out.print("Enter your age: ");
-        int age = scanner.nextInt();
 
-        if (name.isEmpty()) {
-            System.out.println("You didn't enter a name!");
+        isHeads = random.nextBoolean();
+
+        if (isHeads) {
+            System.out.println("It's heads!");
         }
         else {
-            System.out.println("Hello " + name);
+            System.out.println("It's tails!");
         }
 
-        if (age >= 18 && age <= 56) {
-            System.out.println("Drink as much alcohol as you can. Seriously, it's good for you.");
-        }
-        else if (age > 56 ) {
-            System.out.println("lmao unc");
-        }
-        else {
-            System.out.println("ALCOHOL IS THE SERPENT'S BLOOD. AVOID AVOID AVOID.");
 
-        }
 
-        scanner.close();
     }
 }
