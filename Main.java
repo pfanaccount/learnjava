@@ -6,8 +6,18 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine();
+
         System.out.print("Enter your age: ");
         int age = scanner.nextInt();
+
+        if (name.isEmpty()) {
+            System.out.println("You didn't enter a name!");
+        }
+        else {
+            System.out.println("Hello " + name);
+        }
 
         if (age >= 18 && age <= 56) {
             System.out.println("Drink as much alcohol as you can. Seriously, it's good for you.");
