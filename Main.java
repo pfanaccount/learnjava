@@ -5,16 +5,16 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        double length;
-        double height;
+        double radius;
 
-        System.out.print("Enter triangle height: ");
-        height = scanner.nextDouble();
-        System.out.print("Enter triangle length: ");
-        length = scanner.nextDouble();
+        System.out.print("Enter the radius: ");
+        radius = scanner.nextDouble();
 
-        double hypotenuse = Math.sqrt(Math.pow(length, 2) + Math.pow(height, 2));
-        System.out.println(hypotenuse);
+
+        double circleArea = Math.PI * Math.pow(radius, 2);
+        double sphereVolume = (4.0 / 3.0) * Math.PI * Math.pow(radius, 3); 
+        System.out.println("Circle Area: " + circleArea);
+        System.out.println("Sphere Volume: " + sphereVolume);
         scanner.close();
     }
 
