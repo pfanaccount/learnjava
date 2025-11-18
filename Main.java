@@ -13,8 +13,8 @@ public class Main {
 
         double circleArea = Math.PI * Math.pow(radius, 2);
         double sphereVolume = (4.0 / 3.0) * Math.PI * Math.pow(radius, 3); 
-        System.out.println("Circle Area: " + circleArea);
-        System.out.println("Sphere Volume: " + sphereVolume);
+        System.out.printf("Circle Area: %.1f\n", circleArea);
+        System.out.printf("Sphere Volume: %.1f\n", sphereVolume);
         scanner.close();
     }
 
