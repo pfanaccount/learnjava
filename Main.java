@@ -1,21 +1,33 @@
-import java.util.Scanner;
 
 public class Main {
    
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-        double radius;
+        String name = "pfanaccount";
+        char firstLetter = 'p';
+        int age = 19;
+        double height = 193.1975;
+        boolean isEmployed = false;
+        double bankBalance = -10821.53;
 
-        System.out.print("Enter the radius: ");
-        radius = scanner.nextDouble();
+        System.out.printf("Hello %s\n", name);
+        System.out.printf("Your name starts with a %c\n", firstLetter);
+        System.out.printf("You are %d years old\n", age);
+        System.out.printf("Your height is %.1f cm tall\n", height);
+        System.out.printf("Employed: %b\n", isEmployed);
 
+        System.out.printf("You are %d years old and %,.1f cm tall\n", age, height);
+        System.out.printf("You have %,.2f dollars\n", bankBalance);
 
-        double circleArea = Math.PI * Math.pow(radius, 2);
-        double sphereVolume = (4.0 / 3.0) * Math.PI * Math.pow(radius, 3); 
-        System.out.printf("Circle Area: %.1f\n", circleArea);
-        System.out.printf("Sphere Volume: %.1f\n", sphereVolume);
-        scanner.close();
-    }
+        int id1 = 1;
+        int id2 = 23;
+        int id3 = 456;
+        int id4 = 7890;
+        System.out.printf("%4d\n", id1);
+        System.out.printf("%4d\n", id2);
+        System.out.printf("%4d\n", id3);
+        System.out.printf("%4d\n", id4);
+
+        }
 
 }
