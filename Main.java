@@ -1,29 +1,15 @@
-import java.util.Scanner;
-
 public class Main {
    
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        int myInt = 7;
+        double myDouble = 7.01;
 
-        double principalInvestment;
-        double interestRate;
-        int compoundsPerYear;
-        double years;
+        double myIntAsDouble = myInt;
+        int myDoubleAsInt = (int) myDouble;
 
-        System.out.print("Enter the principal investment: $");
-        principalInvestment = scanner.nextDouble();
-        System.out.print("Enter the interest rate (%): ");
-        interestRate = (scanner.nextDouble() / 100.0);
-        System.out.print("Enter the number of times compounded per year: ");
-        compoundsPerYear = scanner.nextInt();
-        System.out.print("Enter the number of years: ");
-        years = scanner.nextDouble();
-
-        double finalInterest = (principalInvestment)* Math.pow(1 + (interestRate / compoundsPerYear), (compoundsPerYear * years));
-        System.out.printf("Your final balance is $%.2f\n", finalInterest);
-
-        scanner.close();
+        System.out.println(myIntAsDouble);
+        System.out.println(myDoubleAsInt);
         }
 
 }
