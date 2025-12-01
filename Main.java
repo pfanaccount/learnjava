@@ -2,32 +2,23 @@ public class Main {
    
     public static void main(String[] args) {
 
-        boolean isStudent = true;
-        boolean isSenior = false;
-        double price = 9.99;
+        String name = "pfanaccount";
 
-        if (isStudent) {
-            System.out.println("You get a student discount of 10%");
-            if(isSenior) {
-                System.out.println("You get a senior discount of 20%");
-                price *= 0.7;
-            }
-            else {
-                System.out.println("You are not a senior.");
-                price *= 0.9;
-            }
-        }
-        else if (isSenior){
-            System.out.println("You are not a student.");
-            System.out.println("You get a senior discount of 20%");
-            price *= 0.8;
-        }
-        else {
-            System.out.println("You get no discount.");
-        }
+        int length = name.length(); // 12
+        char second = name.charAt(1); // f
+        int index = name.indexOf("a"); // 2
+        int lastIndex = name.lastIndexOf("a"); // 5
 
-        System.out.printf("The price of your ticket is $%.2f\n", price);
+        // name = name.toUpperCase();
+        // name = name.toLowerCase();
+        // name = "     Pfan account";
+        // name = name.trim(); // remove whitespace
+        // name = name.replace("a", "o");
 
+        // boolean isEmpty = name.isEmpty();
+
+        if (name.equals("pfanaccount")) {
+            System.out.println("hi");
         }
-
+    }
 }
