@@ -1,24 +1,28 @@
+import java.util.Scanner;
+
 public class Main {
    
     public static void main(String[] args) {
 
-        String name = "pfanaccount";
+        Scanner scanner = new Scanner(System.in);
 
-        int length = name.length(); // 12
-        char second = name.charAt(1); // f
-        int index = name.indexOf("a"); // 2
-        int lastIndex = name.lastIndexOf("a"); // 5
+        String email;
 
-        // name = name.toUpperCase();
-        // name = name.toLowerCase();
-        // name = "     Pfan account";
-        // name = name.trim(); // remove whitespace
-        // name = name.replace("a", "o");
+        System.out.print("Enter your email address: ");
+        email = scanner.nextLine();
 
-        // boolean isEmpty = name.isEmpty();
-
-        if (name.equals("pfanaccount")) {
-            System.out.println("hi");
+        if (email.contains("@")) {
+            String username = email.substring(0, email.indexOf("@"));
+            String domain = email.substring(email.indexOf("@") + 1);
+            System.out.println(username);
+            System.out.println(domain);
         }
+        else {
+            System.out.println("You did not enter a valid email!");
+        }
+
+
+
+        scanner.close();
     }
 }
